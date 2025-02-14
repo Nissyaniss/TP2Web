@@ -111,4 +111,34 @@
 
 		}
 	}
+
+	.testimony {
+		h2 {
+			@apply text-primary font-slackey flex flex-col items-center text-4xl mt-10 mb-10;
+		}
+
+		.content {
+			@apply flex flex-col md:flex-row items-center justify-between;
+
+			.people {
+				@apply flex flex-col items-center justify-center mr-5 ml-5 text-justify mb-25;
+
+				img {
+					@apply rounded-full border-5 border-primary
+				}
+
+				h3 {
+					@apply text-3xl text-primary font-slackey
+				}
+
+				span {
+					@apply mb-5
+				}
+
+				div {
+					@apply w-8/9 mb-5
+				}
+			}
+		}
+	}
 }
