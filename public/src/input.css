@@ -9,43 +9,54 @@
 
 @layer base {
 
-	p,
 	h1,
-	.menu-link {
-		@apply text-neutral-50 text-2xl
+	.price {
+		@apply text-8xl
 	}
 
 	h1, h2, .menu-link {
-		@apply font-slackey
+		@apply font-slackey text-neutral-50
 	}
 
 	.header {
-		@apply bg-[url("images/background-slate.jpg")];
+		@apply bg-[url("images/background-slate.jpg")] items-center;
 
-		.logo {
-			@apply place-content-center
+		.top {
+			@apply flex flex-col md:flex-row;
+
+			.logo {
+				@apply place-content-center
+			}
+
+			.nav {
+				@apply flex flex-col md:flex-row items-center md:ml-auto;
+
+				.menu-link {
+					@apply m-3 text-2xl
+				}
+			}
 		}
 
-		.nav {
-			@apply flex flex-col md:flex-row items-center
-		}
+
+
+
 
 		.featured {
-			@apply flex flex-col md:flex-row items-center text-center p-10;
+			@apply flex flex-col md:flex-row items-center text-center p-10 justify-center;
 
 			.picture {
-				@apply order-1
+				@apply order-1 md:order-2;
 			}
 
 			.content {
-				@apply order-2;
+				@apply order-2 md:order-1;
 
 				.price {
-					@apply text-2xl text-secondary font-bold font-rubik
+					@apply text-6xl text-secondary font-bold font-rubik m-3
 				}
 
 				.commander {
-					@apply bg-primary text-2xl rounded-md
+					@apply bg-primary text-2xl rounded-md p-1 pb-2 text-neutral-50
 				}
 			}
 		}
