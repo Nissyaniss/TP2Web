@@ -141,4 +141,44 @@
 			}
 		}
 	}
+
+	.footer {
+		@apply bg-[#262626] flex flex-col items-center justify-center w-full;
+
+		.content {
+			@apply flex flex-col md:flex-row items-center md:items-center justify-around border-b-[#525252] border-b-2 w-full;
+
+			.links {
+				@apply flex flex-col items-center mb-5;
+
+				h3 {
+					@apply text-primary font-slackey text-2xl
+				}
+
+				a {
+					@apply text-secondary
+				}
+			}
+
+			.socials {
+				@apply flex flex-col items-center justify-center mb-5;
+
+				h3 {
+					@apply text-primary font-slackey text-2xl
+				}
+
+				a {
+					i {
+						@apply text-secondary text-2xl pr-3 pl-3 mt-2
+					}
+				}
+			}
+
+
+		}
+
+		.legal {
+			@apply text-neutral-50 opacity-50
+		}
+	}
 }
