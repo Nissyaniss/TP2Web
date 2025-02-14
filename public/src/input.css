@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+	--color-primary: #E7272D;
+	--color-secondary: #FBB217;
+	--font-rubik: "Rubik Dirt";
+	--font-slackey: "Slackey";
+}
+
+@layer base {
+
+	p,
+	h1,
+	.menu-link {
+		@apply text-neutral-50 text-2xl
+	}
+
+	h1, h2, .menu-link {
+		@apply font-slackey
+	}
+
+	.header {
+		@apply bg-[url("images/background-slate.jpg")];
+
+		.logo {
+			@apply place-content-center
+		}
+
+		.nav {
+			@apply flex flex-col md:flex-row items-center
+		}
+
+		.featured {
+			@apply flex flex-col md:flex-row items-center text-center p-10;
+
+			.picture {
+				@apply order-1
+			}
+
+			.content {
+				@apply order-2;
+
+				.price {
+					@apply text-2xl text-secondary font-bold font-rubik
+				}
+
+				.commander {
+					@apply bg-primary text-2xl rounded-md
+				}
+			}
+		}
+
+	}
+}
