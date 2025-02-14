@@ -84,6 +84,31 @@
 				}
 			}
 		}
+	}
 
+	.newsletter {
+		@apply flex flex-col items-center justify-between bg-secondary m-3;
+
+		h2 {
+			@apply font-slackey text-primary text-3xl mb-5 mt-10
+		}
+
+		.content {
+			@apply flex flex-col md:flex-row items-center justify-center w-full;
+
+			form {
+				@apply md:flex md:flex-row;
+
+				input {
+					@apply bg-neutral-50 mb-5 md:mr-5 w-full p-3 rounded-xl
+				}
+
+				button {
+					@apply bg-primary w-full rounded-xl mb-5 p-3 text-neutral-50
+				}
+			}
+
+
+		}
 	}
 }
