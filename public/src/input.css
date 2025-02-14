@@ -9,17 +9,19 @@
 
 @layer base {
 
-	h1,
-	.price {
-		@apply text-8xl
-	}
-
-	h1, h2, .menu-link {
-		@apply font-slackey text-neutral-50
-	}
-
 	.header {
 		@apply bg-[url("images/background-slate.jpg")] items-center;
+
+		h1,
+		.price {
+			@apply text-8xl
+		}
+
+		h1,
+		h2,
+		.menu-link {
+			@apply font-slackey text-neutral-50
+		}
 
 		.top {
 			@apply flex flex-col md:flex-row;
@@ -37,10 +39,6 @@
 			}
 		}
 
-
-
-
-
 		.featured {
 			@apply flex flex-col md:flex-row items-center text-center p-10 justify-center;
 
@@ -57,6 +55,32 @@
 
 				.commander {
 					@apply bg-primary text-2xl rounded-md p-1 pb-2 text-neutral-50
+				}
+			}
+		}
+	}
+
+	.suggests {
+		h2 {
+			@apply text-primary font-slackey flex flex-col items-center text-4xl mt-10;
+		}
+
+		.content {
+			@apply flex flex-col md:flex-row items-center justify-between;
+
+			.burgers {
+				@apply flex flex-col items-center justify-center mr-5 ml-5 text-justify;
+
+				h3 {
+					@apply font-slackey text-neutral-50 bg-primary rounded-md p-1 text-2xl mb-5
+				}
+
+				p {
+					@apply md:w-8/9 mb-5
+				}
+
+				.price {
+					@apply text-2xl text-primary font-rubik font-bold
 				}
 			}
 		}
